@@ -38,19 +38,33 @@ to compile the threads we use : cc (or gcc) -pthread
 ##    arguments:
         mutex                    : identifies the mutex to be initialized
         attr                     : is a pointer to a pthread_mutexattr_t object that has previously been initialized to define the arguments for the mutex .If attr is specified as NULL, then the mutex is assigned various default attributes.
+##    return    :
+        this function returns 0 on success and a non zero positive value depends on the error 
 #  pthread_mutex_destroy:
 ##    prototype :
         int     pthread_mutex_destroy(pthread_mutex_t *mutex);
 ##    arguments:
+        mutex                    : identifies the mutex to be initialized
+##    return    :
+        this function returns 0 on success and a non zero positive value depends on the error 
 #  pthread_mutex_lock   :
 ##    prototype :
         int     pthread_mutex_lock(pthread_mutex_t *mutex);
 ##    arguments:
+        mutex                    : identifies the mutex to be initialized
+##    return    :
+        this function returns 0 on success and a non zero positive value depends on the error 
 #  pthread_mutex_unlock :
 ##    prototype :
         int     pthread_mutex_unlock(pthread_mutex_t *mutex);
 ##    arguments:
-#  pthread_mutex_unlock :
+##    return    :
+        this function returns 0 on success and a non zero positive value depends on the error 
+#  pthread_self :
 ##    prototype :
         pthread_t       pthread_self(void);
 ##    arguments:
+##    return    :
+        this function returns 0 on success and a non zero positive value depends on the error 
+
+

@@ -21,7 +21,6 @@ void *routine(void *args)
     while (i++ < 10000)
     {
         glob++;
-        // i++;
     }
     return (NULL);
 }
@@ -35,7 +34,6 @@ void *routine1(void *args)
     while (i++ < 10000)
     {
         glob++;
-        // i++;
     }
     return (NULL);
 }
